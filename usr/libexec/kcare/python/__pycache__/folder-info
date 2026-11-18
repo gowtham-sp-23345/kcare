@@ -1,0 +1,5 @@
+root@10.133.111.56/usr/libexec/kcare/python/__pycache__#ls -l
+total 72
+-rw-r----- 1 root root 57678 Oct 16 18:54 distro.cpython-311.pyc
+-rw-r----- 1 root root 10926 Oct 16 18:53 kcsig_verify.cpython-311.pyc
+

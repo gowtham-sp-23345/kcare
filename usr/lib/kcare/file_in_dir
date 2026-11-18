@@ -1,0 +1,8 @@
+total 920
+-rwxr-xr-x 1 root root  33400 Oct  3 12:04 libcare-cc
+-rwxr-xr-x 1 root root  14624 Oct  3 12:04 libcare-client
+-rwxr-xr-x 1 root root 401992 Oct  3 12:04 libcare-ctl
+-rwxr-xr-x 1 root root   6489 Oct  3 12:04 libcare-patch-make
+-rw-r--r-- 1 root root 456960 Oct  3 12:04 libcare-plugin.so
+-rwxr-xr-x 1 root root  14688 Oct  3 12:04 libcare-server
+

@@ -1,0 +1,24 @@
+-rwxr-xr-x 1 root root        4667 Oct  3 12:04 kcare-scanner-interface
+==============================================================================
+kcare-scanner-interface --help
+Usage: kcare-scanner-interface <subcommand> [options]\n
+Subcommands:
+    init   [username ...]
+    disable
+
+For help with each subcommand run:
+kcare-scanner-interface <subcommand> -h|--help
+
+Done.
+root@10.125.6.137/usr/bin#kcare-scanner-interface init --help
+Resetting.
+Setting up a scanner-interface for --help
+Setting up scanner agents
+Done.
+root@10.125.6.137/usr/bin#kcare-scanner-interface disable --help
+Done.
+root@10.125.6.137/usr/bin#
+===================================================================================
+kcare-scanner-interface: Bourne-Again shell script, ASCII text executable
+
+

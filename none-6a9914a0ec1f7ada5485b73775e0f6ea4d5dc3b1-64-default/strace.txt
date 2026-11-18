@@ -1,0 +1,85 @@
+execve("/usr/sbin/insmod", ["insmod", "kcare.ko", "strace_kcare.txt"], 0x7fff05f7dcd0 /* 37 vars */) = 0
+brk(NULL)                               = 0x561d7ba4d000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f80b9444000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=19015, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 19015, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f80b943f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libzstd.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=763816, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 766016, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f80b9383000
+mmap(0x7f80b9388000, 659456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f80b9388000
+mmap(0x7f80b9429000, 81920, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa6000) = 0x7f80b9429000
+mmap(0x7f80b943d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb9000) = 0x7f80b943d000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=190456, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 188440, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f80b9354000
+mmap(0x7f80b9358000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f80b9358000
+mmap(0x7f80b9375000, 49152, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7f80b9375000
+mmap(0x7f80b9381000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2d000) = 0x7f80b9381000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4734232, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 4748720, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f80b8e00000
+mmap(0x7f80b8ec5000, 2609152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xc5000) = 0x7f80b8ec5000
+mmap(0x7f80b9142000, 909312, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x342000) = 0x7f80b9142000
+mmap(0x7f80b9220000, 413696, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x41f000) = 0x7f80b9220000
+mmap(0x7f80b9285000, 9648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f80b9285000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1926232, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f80b8c1e000
+mmap(0x7f80b8c44000, 1400832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f80b8c44000
+mmap(0x7f80b8d9a000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000) = 0x7f80b8d9a000
+mmap(0x7f80b8ded000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000) = 0x7f80b8ded000
+mmap(0x7f80b8df3000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f80b8df3000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f80b9352000
+arch_prctl(ARCH_SET_FS, 0x7f80b9353040) = 0
+set_tid_address(0x7f80b9353310)         = 3509631
+set_robust_list(0x7f80b9353320, 24)     = 0
+rseq(0x7f80b9353960, 0x20, 0, 0x53053053) = 0
+mprotect(0x7f80b8ded000, 16384, PROT_READ) = 0
+mprotect(0x7f80b9220000, 401408, PROT_READ) = 0
+mprotect(0x7f80b9381000, 4096, PROT_READ) = 0
+mprotect(0x7f80b943d000, 4096, PROT_READ) = 0
+mprotect(0x561d7ba4a000, 8192, PROT_READ) = 0
+mprotect(0x7f80b9477000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f80b943f000, 19015)           = 0
+getrandom("\xd8\x00\x4c\x0c\xd0\x65\x2f\x96", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x561d7ba4d000
+brk(0x561d7ba6e000)                     = 0x561d7ba6e000
+uname({sysname="Linux", nodename="10.164.119.148", ...}) = 0
+openat(AT_FDCWD, "/lib/modules/6.1.123/modules.softdep", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1275, ...}, AT_EMPTY_PATH) = 0
+read(3, "# Soft dependencies extracted fr"..., 4096) = 1275
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/proc/cmdline", O_RDONLY|O_CLOEXEC) = 3
+read(3, "root=LABEL=/ ro crashkernel=128M"..., 4095) = 148
+read(3, "", 3947)                       = 0
+close(3)                                = 0
+newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0750, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cache/kcare/patches/none-6a9914a0ec1f7ada5485b73775e0f6ea4d5dc3b1-64-default", {st_mode=S_IFDIR|0750, st_size=4096, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/var/cache/kcare/patches/none-6a9914a0ec1f7ada5485b73775e0f6ea4d5dc3b1-64-default/kcare.ko", {st_mode=S_IFREG|0640, st_size=1086659, ...}, 0) = 0
+openat(AT_FDCWD, "/var/cache/kcare/patches/none-6a9914a0ec1f7ada5485b73775e0f6ea4d5dc3b1-64-default/kcare.ko", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1", 6)               = 6
+lseek(3, 0, SEEK_SET)                   = 0
+newfstatat(3, "", {st_mode=S_IFREG|0640, st_size=1086659, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1086659, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f80b8b14000
+finit_module(3, "strace_kcare.txt", 0)  = 0
+munmap(0x7f80b8b14000, 1086659)         = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+

@@ -1,0 +1,6 @@
+obj-m := kcare.o
+kcare-y := kcare_main.o reloc-$(SRCARCH).o
+kcare-y += kcare_resolve.o
+kcare-y += kcare_sign.o
+kcare-y += kcare_symbol_cache.o
+kcare-y += kcare_verify.o

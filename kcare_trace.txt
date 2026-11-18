@@ -1,0 +1,19 @@
+# tracer: function_graph
+#
+# CPU  DURATION                  FUNCTION CALLS
+# |     |   |                     |   |   |   |
+  0)   2.760 us    |  kcare_open [kcare]();
+  0)   0.870 us    |  opt_safety_method_open [kcare]();
+  0)   0.610 us    |  opt_safety_method_write [kcare]();
+  0)   0.720 us    |  opt_skip_cpus_open [kcare]();
+  0)   1.260 us    |  opt_skip_cpus_write [kcare]();
+  0)   1.580 us    |  kcare_ioctl [kcare]();
+  0)               |  kcare_ioctl [kcare]() {
+  0)   0.570 us    |    kcare_update_kpatch_desc.part.0 [kcare]();
+  0)   3.750 us    |    kcare_verify_patch_signature [kcare]();
+  0) * 36042.05 us |    kcare_verify [kcare]();
+  0) ! 110.300 us  |    kcare_apply_relocations [kcare]();
+  0)   0.880 us    |    freeze_blacklist_apply [kcare]();
+ 27)   4.160 us    |    freeze_blacklist_undo [kcare]();
+ 27) @ 948701.6 us |  } /* kcare_ioctl [kcare] */
+ 27)   0.680 us    |  kcare_release [kcare]();

@@ -1,0 +1,93 @@
+-rwxr-xr-x 1 root root        1237 Oct  3 12:04 kcarectl
+================================================================================
+kcarectl --help
+
+
+
+usage: kcarectl [-h] [--debug] [-i] [--app-info] [-u] [--unload] [--smart-update] [--auto-update] [--local PATH] [--patch-info] [--freezer freezer] [--nofreeze] [--uname] [--license-info]
+                [--status] [--register KEY] [--register-autoretry] [--unregister] [--check] [--latest-patch-info] [--test] [--tag TAG] [--prefix PREFIX] [--nosignature]
+                [--set-monitoring-key KEY] [--doctor] [--enable-auto-update] [--disable-auto-update] [--plugin-info] [--server-info] [--json] [--version] [--kpatch-debug] [--no-check-cert]
+                [--set-patch-level SET_PATCH_LEVEL] [--check-compatibility] [--clear-cache] [--set-patch-type SET_PATCH_TYPE | --edf-enabled | --edf-disabled]
+                [--set-sticky-patch SET_STICKY_PATCH] [-q] [--has-flags HAS_FLAGS] [--force] [--set-config KEY=VALUE] [--disable-libcare] [--enable-libcare] [--lib-update] [--lib-unload]
+                [--lib-auto-update] [--lib-info] [--lib-patch-info] [--lib-version PACKAGENAME] [--userspace-update [USERSPACE_PATCHES]] [--userspace-auto-update] [--userspace-status]
+
+Manage KernelCare patches for your kernel
+
+options:
+  -h, --help            show this help message and exit
+  --debug
+  -i, --info            Display information about KernelCare. Use with --json parameter to get result in JSON format.
+  --app-info            Display information about KernelCare agent. Use with --json parameter to get result in JSON format.
+  -u, --update          Download latest patches and apply them to the current kernel
+  --unload              Unload patches
+  --smart-update        Patch kernel based on UPDATE POLICY settings
+  --auto-update         Check if update is available, if so -- update
+  --local PATH          Update from a server local directory; accepts a path where patches are located
+  --patch-info          Return the list of applied patches
+  --freezer freezer     Freezer type: full (default), smart, none
+  --nofreeze            [deprecated] Don't freeze tasks before patching
+  --uname               Return safe kernel version
+  --license-info        Return current license info
+  --status              Return status of updates
+  --register KEY        Register using KernelCare Key
+  --register-autoretry  Retry registering indefinitely if failed on the first attempt
+  --unregister          Unregister from KernelCare (for key-based servers only)
+  --check               Check if new update available
+  --latest-patch-info   Return patch info for the latest available patch. Use with --json parameter to get result in JSON format.
+  --test                [deprecated] Use --prefix=test instead
+  --tag TAG             Tag server with custom metadata, for ePortal users only
+  --prefix PREFIX       Patch source prefix used to test different builds by downloading builds from different locations based on prefix
+  --nosignature         Do not check signature
+  --set-monitoring-key KEY
+                        Set monitoring key for IP based licenses. 16 to 32 characters, alphanumeric only
+  --doctor              Submits a vitals report to CloudLinux for analysis and bug-fixes
+  --enable-auto-update  Enable auto updates
+  --disable-auto-update
+                        Disable auto updates
+  --plugin-info         Provides the information shown in control panel plugins for KernelCare. Use with --json parameter to get result in JSON format.
+  --server-info         Provides information about the host in JSON format.
+  --json                Return '--plugin-info', '--latest-patch-info', '--patch-info', '--app-info' and '--info' results in JSON format
+  --version             Return the current version of KernelCare
+  --kpatch-debug        Enable the debug mode
+  --no-check-cert       Disable the patch server SSL certificates checking
+  --set-patch-level SET_PATCH_LEVEL
+                        Set patch level to be applied. To select latest patch level set -1
+  --check-compatibility
+                        Check compatibility.
+  --clear-cache         Clear all cached files
+  --set-patch-type SET_PATCH_TYPE
+                        Set patch type feed. To select default feed use 'default' option
+  --edf-enabled         Enable exploit detection framework
+  --edf-disabled        Disable exploit detection framework
+  --set-sticky-patch SET_STICKY_PATCH
+                        Set patch to stick to date in DDMMYY format, or retrieve it from KEY if set to KEY. Leave empty to unstick
+  -q, --quiet           Suppress messages, provide only errors and warnings to stderr
+  --has-flags HAS_FLAGS
+                        Check agent features
+  --force               Force action and ignore several restristions.
+  --set-config KEY=VALUE
+                        Change configuration option
+  --disable-libcare     Disable libcare services
+  --enable-libcare      Enable libcare services
+  --lib-update          Download latest patches and apply them to the current userspace libraries
+  --lib-unload, --userspace-unload
+                        Unload userspace patches
+  --lib-auto-update     Check if update is available, if so -- update
+  --lib-info, --userspace-info
+                        Display information about KernelCare+.
+  --lib-patch-info, --userspace-patch-info
+                        Return the list of applied userspace patches
+  --lib-version PACKAGENAME, --userspace-version PACKAGENAME
+                        Return safe package version
+  --userspace-update [USERSPACE_PATCHES]
+                        Download latest patches and apply them to the corresponding userspace processes
+  --userspace-auto-update
+                        Download latest patches and apply them to the corresponding userspace processes
+  --userspace-status    Return status of userspace updates
+
+
+==============================================================================================
+
+
+kcarectl: Bourne-Again shell script, ASCII text executable
+============================================================================================    

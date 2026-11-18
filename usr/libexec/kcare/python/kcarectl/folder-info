@@ -1,0 +1,29 @@
+root@10.133.111.56/usr/libexec/kcare/python/kcarectl/__pycache__#ls -l
+total 320
+-rw-r----- 1 root root  18123 Oct 16 18:53 auth.cpython-311.pyc
+-rw-r----- 1 root root    739 Oct 16 18:53 capabilities.cpython-311.pyc
+-rw-r----- 1 root root   2107 Oct 16 18:53 config.cpython-311.pyc
+-rw-r----- 1 root root  11747 Oct 16 18:53 config_handlers.cpython-311.pyc
+-rw-r----- 1 root root   1325 Oct 16 18:53 constants.cpython-311.pyc
+-rw-r----- 1 root root   3803 Oct 16 18:53 errors.cpython-311.pyc
+-rw-r----- 1 root root   8262 Oct 16 18:53 fetch.cpython-311.pyc
+-rw-r----- 1 root root   6480 Oct 16 18:53 http_utils.cpython-311.pyc
+-rw-r----- 1 root root 112556 Oct 16 18:53 __init__.cpython-311.pyc
+-rw-r----- 1 root root   6082 Oct 16 18:53 ipv6_support.cpython-311.pyc
+-rw-r----- 1 root root  19713 Oct 16 18:53 kcare.cpython-311.pyc
+-rw-r----- 1 root root  31963 Oct 16 18:53 libcare.cpython-311.pyc
+-rw-r----- 1 root root   5559 Oct 16 18:53 log_utils.cpython-311.pyc
+-rw-r----- 1 root root   1527 Oct 16 18:53 __main__.cpython-311.pyc
+-rw-r----- 1 root root  17509 Oct 16 18:53 platform_utils.cpython-311.pyc
+-rw-r----- 1 root root   5022 Oct 16 18:53 process_utils.cpython-311.pyc
+-rw-r----- 1 root root   3027 Oct 16 18:53 py23.cpython-311.pyc
+-rw-r----- 1 root root   3047 Oct 16 18:53 selinux.cpython-311.pyc
+-rw-r----- 1 root root   3809 Oct 16 18:53 serverid.cpython-311.pyc
+-rw-r----- 1 root root   6169 Oct 16 18:53 server_info.cpython-311.pyc
+-rw-r----- 1 root root   1888 Oct 16 18:53 update_utils.cpython-311.pyc
+-rw-r----- 1 root root  14094 Oct 16 18:53 utils.cpython-311.pyc
+
+
+file auth.cpython-311.pyc 
+auth.cpython-311.pyc: Byte-compiled Python module for CPython 3.11, timestamp-based, .py timestamp: Fri Oct  3 06:34:31 2025 UTC, .py size: 11134 bytes
+
